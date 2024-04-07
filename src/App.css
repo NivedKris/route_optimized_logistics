@@ -1,0 +1,106 @@
+/* App.css */
+
+/* Container for the entire application */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Map container */
+.map {
+  width: 100%; /* Set width to 100% for full-screen */
+  height: 100vh; /* Set height to 100vh for full-screen */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Search bar container */
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.searchBar h1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Input fields */
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Marker styles */
+.marker {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.marker-delivery {
+  width: 20px;
+  height: 20px;
+  background-color: #28a745; /* Green marker for new locations */
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+/* Marker popup */
+.mapboxgl-popup {
+  max-width: 200px;
+  font-size: 14px;
+}
+
+/* Marker popup content */
+.mapboxgl-popup-content {
+  padding: 10px;
+}
+.csvUpload {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px dotted #ccc;
+  /* Dotted border */
+  border-radius: 15px;
+  /* Curved border */
+  background-color: #fff;
+  /* White background */
+  max-width: 400px;
+  /* Adjust as needed */
+}
+
+.csvUpload h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the default file input button */
+.csvUpload input[type="file"] {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px dotted #007bff;
+  /* Dotted border */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  outline: none;
+  /* Remove default focus outline */
+}
+
+/* Hover effect for the file input button */
+.csvUpload input[type="file"]:hover {
+  background-color: #f0f0f0;
+}
